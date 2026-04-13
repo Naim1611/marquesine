@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Marquesina */
+.marquesina {
+    background-color: #ffd966;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #e6b422;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+marquee {
+    font-size: 1.1rem;
+}
+
+/* Tarjeta de portada */
+.cover {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0 0 20px 20px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-top: 5px solid #ffd966;
+}
+
+.cover:hover {
+    transform: scale(1.01);
+}
+
+.icono {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #ffd966;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.datos {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 1.2rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.datos p {
+    margin: 8px 0;
+    color: #2c3e50;
+}
+
+button {
+    background: #2a5298;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background: #ff9800;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.mensaje {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e67e22;
+    background: #fff3e0;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 550px) {
+    .cover {
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    .datos {
+        font-size: 0.9rem;
+    }
+}
